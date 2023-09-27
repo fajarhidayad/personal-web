@@ -5,7 +5,7 @@ import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi';
 
 const ContactPage = () => {
   return (
-    <main className="flex flex-col md:flex-row gap-10">
+    <main className="flex flex-col md:flex-row gap-10 px-5">
       <section className="mb-8">
         <h2 className="text-2xl font-medium mb-5">Contact Info</h2>
         <div className="flex gap-4 mb-10">

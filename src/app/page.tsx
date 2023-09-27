@@ -16,7 +16,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="px-5">
       <section className="grid grid-rows-4 grid-cols-1 md:grid-cols-4 gap-5 mb-5">
         <BioCard />
         <BaseCard colSpan="col-span-2">

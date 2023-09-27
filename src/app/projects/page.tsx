@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const ProjectsPage = () => {
   return (
-    <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+    <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 px-5">
       <section className="bg-white rounded-2xl p-5">
         <Image
           src={WezaImage}

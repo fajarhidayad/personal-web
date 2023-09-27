@@ -47,7 +47,7 @@ const AboutCard = () => {
 
 const AboutPage = () => {
   return (
-    <main className="flex flex-col md:flex-row justify-between gap-10 items-start">
+    <main className="flex flex-col md:flex-row justify-between gap-10 items-start px-5">
       <AboutCard />
       <section className="flex-1">
         <div className="mb-14">

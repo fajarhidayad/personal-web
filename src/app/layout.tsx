@@ -19,9 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={
-          'bg-gray-50 max-w-6xl mx-auto min-h-[95vh] px-5 flex flex-col'
-        }
+        className={'bg-gray-50 max-w-6xl mx-auto min-h-[95vh] flex flex-col'}
       >
         <Navbar />
         {children}
