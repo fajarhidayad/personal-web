@@ -1,4 +1,4 @@
-import React from 'react';
+import { AnimateDiv } from './Animate';
 
 interface BaseCardProps {
   colSpan?: 'col-span-1' | 'col-span-2' | 'col-span-3';
@@ -12,11 +12,12 @@ const BaseCard = ({
   rowSpan = 'row-span-1',
 }: BaseCardProps) => {
   return (
-    <div
+    <AnimateDiv
+      animation="scaleUp"
       className={`bg-white flex items-center gap-4 justify-between rounded-3xl p-4 shadow-sm ${colSpan} ${rowSpan}`}
     >
       {children}
-    </div>
+    </AnimateDiv>
   );
 };
 

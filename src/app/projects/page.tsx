@@ -1,12 +1,15 @@
+'use client';
+
 import Image from 'next/image';
 import WezaImage from '@/assets/Weza-Ripoto.png';
 import ManageLandingPage from '@/assets/manage-landing-page.png';
 import Link from 'next/link';
+import { AnimateSection } from '@/components/Animate';
 
 const ProjectsPage = () => {
   return (
     <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 px-5">
-      <section className="bg-white rounded-2xl p-5">
+      <AnimateSection animation="scaleUp" className="bg-white rounded-2xl p-5">
         <Image
           src={WezaImage}
           alt="Weza-Ripoto-App"
@@ -27,8 +30,8 @@ const ProjectsPage = () => {
         >
           Visit
         </Link>
-      </section>
-      <section className="bg-white rounded-2xl p-5">
+      </AnimateSection>
+      <AnimateSection animation="scaleUp" className="bg-white rounded-2xl p-5">
         <Image
           src={ManageLandingPage}
           alt="Weza-Ripoto-App"
@@ -49,7 +52,7 @@ const ProjectsPage = () => {
         >
           Visit
         </Link>
-      </section>
+      </AnimateSection>
     </main>
   );
 };

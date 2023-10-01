@@ -2,10 +2,14 @@ import Image from 'next/image';
 import SuryaImg from '@/assets/surya.jpeg';
 import Link from 'next/link';
 import { FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa6';
+import { AnimateDiv, AnimateSection } from '@/components/Animate';
 
 const AboutCard = () => {
   return (
-    <section className="bg-white w-full md:w-auto rounded-3xl p-6 shadow-sm flex flex-col items-center sm:sticky md:top-5">
+    <AnimateSection
+      animation="scaleUp"
+      className="bg-white w-full md:w-auto rounded-3xl p-6 shadow-sm flex flex-col items-center sm:sticky md:top-5"
+    >
       <Image
         src={SuryaImg}
         width={250}
@@ -41,7 +45,7 @@ const AboutCard = () => {
       >
         Contact Me
       </Link>
-    </section>
+    </AnimateSection>
   );
 };
 
@@ -50,7 +54,7 @@ const AboutPage = () => {
     <main className="flex flex-col md:flex-row justify-between gap-10 items-start px-5">
       <AboutCard />
       <section className="flex-1">
-        <div className="mb-14">
+        <AnimateDiv animation="fadeUp" className="mb-14">
           <h2 className="text-2xl mb-4">About Me</h2>
           <p className="text-slate-500">
             I&apos;m a Fullstack Developer specializing in React.js or Next.js
@@ -58,8 +62,8 @@ const AboutPage = () => {
             backend, I am driven by a passion for crafting seamless,
             high-performance web applications.
           </p>
-        </div>
-        <div className="mb-14">
+        </AnimateDiv>
+        <AnimateDiv animation="fadeUp" className="mb-14">
           <h2 className="text-2xl mb-5">Experiences</h2>
           <ul>
             <li className="mb-6">
@@ -87,16 +91,16 @@ const AboutPage = () => {
               </p>
             </li>
           </ul>
-        </div>
-        <div className="mb-14">
+        </AnimateDiv>
+        <AnimateDiv animation="fadeUp" className="mb-14">
           <h2 className="text-2xl mb-4">Education</h2>
           <h4 className="text-slate-400 mb-1">2016 - 2023</h4>
           <h3 className="text-blue-500 text-lg mb-1">
             Bachelor Degree of Computer
           </h3>
           <h4 className="text-slate-400 mb-1">Jember University</h4>
-        </div>
-        <div className="mb-14">
+        </AnimateDiv>
+        <AnimateDiv animation="fadeUp" className="mb-14">
           <h2 className="text-2xl mb-4">Skills</h2>
           <ul className="grid grid-cols-2 gap-5">
             <li>
@@ -118,9 +122,9 @@ const AboutPage = () => {
               <h3 className="text-blue-500 text-lg">SQL / No-SQL Database</h3>
             </li>
           </ul>
-        </div>
-        <div className="mb-14">
-          <h2 className="text-2xl mb-4">Certificates</h2>
+        </AnimateDiv>
+        <AnimateDiv animation="fadeUp" className="mb-14">
+          <h2 className="text-2xl mbv-4">Certificates</h2>
           <ul>
             <LinkItems
               title="Fullstack Javascript Developer 2021: Top Up Voucher Game"
@@ -165,7 +169,7 @@ const AboutPage = () => {
               link="https://www.coursera.org/account/accomplishments/certificate/29SHCZLCGL87"
             />
           </ul>
-        </div>
+        </AnimateDiv>
       </section>
     </main>
   );

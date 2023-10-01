@@ -5,12 +5,13 @@ import NavLink from './NavLink';
 import { IoIosMenu } from 'react-icons/io';
 import NavOverlay from './NavOverlay';
 import { useState } from 'react';
+import { AnimateHeader } from './Animate';
 
 const Navbar = () => {
   const [openOverlay, setOpenOverlay] = useState(false);
 
   return (
-    <header className="relative">
+    <AnimateHeader className="relative" animation="fadeIn">
       <nav className="flex items-center justify-between py-6 mb-10 px-5">
         <Link href={'/'} className="text-3xl font-semibold text-slate-800">
           Surya<span className="text-blue-500">Dev</span>
@@ -37,7 +38,7 @@ const Navbar = () => {
         </button>
       </nav>
       {openOverlay && <NavOverlay open={() => setOpenOverlay(false)} />}
-    </header>
+    </AnimateHeader>
   );
 };
 

@@ -1,3 +1,4 @@
+import { AnimateSection } from '@/components/Animate';
 import ContactForm from '@/components/ContactForm';
 import Link from 'next/link';
 import React from 'react';
@@ -7,7 +8,7 @@ import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi';
 const ContactPage = () => {
   return (
     <main className="flex flex-col md:flex-row gap-10 px-5">
-      <section className="mb-8">
+      <AnimateSection animation="fadeUp" className="mb-8">
         <h2 className="text-2xl font-medium mb-5">Contact Info</h2>
         <div className="flex gap-4 mb-10">
           <div className="rounded-xl p-4 bg-white text-3xl text-blue-500">
@@ -48,14 +49,17 @@ const ContactPage = () => {
             <FaMedium />
           </Link>
         </div>
-      </section>
-      <section className="bg-white rounded-3xl p-8 flex-1">
+      </AnimateSection>
+      <AnimateSection
+        animation="scaleUp"
+        className="bg-white rounded-3xl p-8 flex-1"
+      >
         <h1 className="text-4xl font-medium mb-8">
           Let&apos;s Work <span className="text-blue-500">Together</span>
         </h1>
 
         <ContactForm />
-      </section>
+      </AnimateSection>
     </main>
   );
 };
