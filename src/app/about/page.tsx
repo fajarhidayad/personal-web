@@ -149,7 +149,7 @@ const AboutPage = () => {
             <LinkItems
               title="Belajar Membuat Aplikasi Back-End untuk Pemula"
               platform="Dicoding"
-              date="September 2023å"
+              date="September 2023"
               link="https://www.dicoding.com/certificates/EYX4Y0L55ZDL"
             />
             <LinkItems

@@ -1,3 +1,4 @@
+import ContactForm from '@/components/ContactForm';
 import Link from 'next/link';
 import React from 'react';
 import { FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa6';
@@ -52,38 +53,8 @@ const ContactPage = () => {
         <h1 className="text-4xl font-medium mb-8">
           Let&apos;s Work <span className="text-blue-500">Together</span>
         </h1>
-        <div className="flex flex-col">
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            className="bg-gray-50 rounded-xl p-4 mb-4"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            className="bg-gray-50 rounded-xl p-4 mb-4"
-            required
-          />
-          <input
-            type="text"
-            name="subject"
-            placeholder="Your Subject"
-            className="bg-gray-50 rounded-xl p-4 mb-4"
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            className="bg-gray-50 rounded-xl p-4 mb-4"
-            required
-          />
-          <button className="bg-gray-800 text-slate-200 py-3 rounded-lg hover:bg-blue-500 transition-colors duration-200">
-            Send Message
-          </button>
-        </div>
+
+        <ContactForm />
       </section>
     </main>
   );
