@@ -20,13 +20,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={'bg-gray-50 max-w-6xl mx-auto min-h-[95vh] flex flex-col'}
-      >
-        <Navbar />
-        <ToastContainer />
-        {children}
-        <Footer />
+      <body className={'bg-gray-50'}>
+        <div className="max-w-6xl mx-auto min-h-[95vh] flex flex-col">
+          <Navbar />
+          <ToastContainer />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

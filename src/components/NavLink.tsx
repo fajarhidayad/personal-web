@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 interface NavLink {
   title: string;
   href: string;
+  onClick?: () => void;
 }
 
 const NavLink = (props: NavLink) => {
@@ -15,6 +16,7 @@ const NavLink = (props: NavLink) => {
     <li>
       <Link
         href={props.href}
+        onClick={props.onClick}
         className={`hover:text-blue-500 transition-all duration-200 ${activeClassLink}`}
       >
         {props.title}

@@ -6,6 +6,7 @@ import { IoIosMenu } from 'react-icons/io';
 import NavOverlay from './NavOverlay';
 import { useState } from 'react';
 import { AnimateHeader } from './Animate';
+import { AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const [openOverlay, setOpenOverlay] = useState(false);
@@ -37,7 +38,9 @@ const Navbar = () => {
           <IoIosMenu />
         </button>
       </nav>
-      {openOverlay && <NavOverlay open={() => setOpenOverlay(false)} />}
+      <AnimatePresence>
+        {openOverlay && <NavOverlay close={() => setOpenOverlay(false)} />}
+      </AnimatePresence>
     </AnimateHeader>
   );
 };
