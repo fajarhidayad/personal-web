@@ -2,6 +2,7 @@
 
 import Tweety from '@/assets/Tweety.png';
 import WezaImage from '@/assets/Weza-Ripoto.png';
+import ChatApp from '@/assets/chat-app.png';
 import ManageLandingPage from '@/assets/manage-landing-page.png';
 import { AnimateSection } from '@/components/Animate';
 import { Button, buttonVariants } from '@/components/ui/button';
@@ -107,6 +108,34 @@ const ProjectsPage = () => {
             </ul>
           </div>
         </ProjectCard>
+        <ProjectCard
+          title="Firebase Chat App"
+          img={ChatApp}
+          srcLive="https://chat-group-rho.vercel.app/"
+          description="Realtime chat app using Next.js & Firebase."
+          srcCode="https://github.com/fajarhidayad/chat-app-firebase"
+        >
+          <div className="flex items-center gap-3 mb-3">
+            <Badge className={badgeVariants({ className: 'bg-slate-800' })}>
+              Next.js
+            </Badge>
+            <Badge className={badgeVariants({ className: 'bg-blue-500' })}>
+              Tailwind CSS
+            </Badge>
+            <Badge className={badgeVariants({ className: 'bg-orange-400' })}>
+              Firebase
+            </Badge>
+          </div>
+          <div>
+            <h3 className="mb-1 font-bold">Features:</h3>
+            <ul>
+              <li>Firebase Authentication</li>
+              <li>Realtime chat using Firestore</li>
+              <li>User can add new channel</li>
+              <li>Automatically join channel</li>
+            </ul>
+          </div>
+        </ProjectCard>
       </main>
     </>
   );
@@ -147,7 +176,7 @@ const ProjectCard = (props: {
         <Link
           href={props.srcLive}
           className={buttonVariants({
-            className: 'mr-3 bg-green-700 hover:bg-green-800',
+            className: 'mr-3 bg-lime-500 hover:bg-lime-600',
           })}
         >
           Visit
