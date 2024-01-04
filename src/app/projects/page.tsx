@@ -3,6 +3,7 @@
 import Tweety from '@/assets/Tweety.png';
 import WezaImage from '@/assets/Weza-Ripoto.png';
 import ChatApp from '@/assets/chat-app.png';
+import Shoppingify from '@/assets/Shoppingify.jpeg';
 import ManageLandingPage from '@/assets/manage-landing-page.png';
 import { AnimateSection } from '@/components/Animate';
 import { Button, buttonVariants } from '@/components/ui/button';
@@ -134,6 +135,35 @@ const ProjectsPage = () => {
               <li>User can add new channel</li>
               <li>Automatically join channel</li>
             </ul>
+          </div>
+        </ProjectCard>
+        <ProjectCard
+          title="Shoppingify"
+          img={Shoppingify}
+          srcLive="https://shoppingify-topaz.vercel.app/"
+          description="Shopping list app for taking notes of their shopping items"
+          srcCode="https://github.com/fajarhidayad/shoppingify"
+        >
+          <div className="flex items-center gap-3 mb-3">
+            <Badge className={badgeVariants({ className: 'bg-blue-300' })}>
+              React.js
+            </Badge>
+            <Badge className={badgeVariants({ className: 'bg-blue-500' })}>
+              Tailwind CSS
+            </Badge>
+            <Badge className={badgeVariants({ className: 'bg-slate-700' })}>
+              shadcn
+            </Badge>
+            <Badge className={badgeVariants({ className: 'bg-green-400' })}>
+              Zustand
+            </Badge>
+            <Badge className={badgeVariants({ className: 'bg-purple-400' })}>
+              Vite
+            </Badge>
+          </div>
+          <div>
+            <h3 className="mb-1 font-bold">Features:</h3>
+            <p>Work in progress</p>
           </div>
         </ProjectCard>
       </main>
